@@ -10,3 +10,17 @@ end
 package "redis-server" do
   action :install
 end
+
+# database.yml
+template "/etc/redis/redis.conf" do
+  cookbook 'redis_ubuntu'
+  source 'redis.conf.erb'
+
+  variables({
+    bind: node['redis_ubuntu']['bind']
+  })
+
+  owner 'redis'
+  group 'redis'
+  mode '0640'
+end

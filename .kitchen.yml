@@ -23,3 +23,5 @@ suites:
       inspec_tests:
         - test/smoke/default
     attributes:
+      redis_ubuntu:
+        bind: '0.0.0.0'

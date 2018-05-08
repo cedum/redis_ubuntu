@@ -1,5 +1,5 @@
 name 'redis_ubuntu'
-version '0.1.0'
+version '0.1.1'
 
 maintainer 'Dumitru Ceban'
 maintainer_email 'dumitru@ceban.it'
